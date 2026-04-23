@@ -446,7 +446,7 @@ bytearray_t *x509_get_der(const x509_t *self);
 
 pkey_t *pkey_new_privkey_from_pem_file(const char *pem_fname, const char *passwd, SalticidaeCError *err);
 pkey_t *pkey_new_privkey_from_der(const bytearray_t *der, SalticidaeCError *err);
-void pkey_free(const pkey_t *self);
+void salticidae_pkey_free(const pkey_t *self);
 bytearray_t *pkey_get_pubkey_der(const pkey_t *self);
 bytearray_t *pkey_get_privkey_der(const pkey_t *self);
 
